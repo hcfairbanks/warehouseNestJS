@@ -8,6 +8,9 @@ server:
   origin:
     development:
       - 'http://localhost:3001'
+      - 'http://localhost:3001/signin'
+      - 'http://localhost:3001/items'
+
 
 jwt:
   secret: '9e056eff31bf906980b7afb3edfbc944

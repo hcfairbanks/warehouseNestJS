@@ -27,7 +27,7 @@ export class ItemsController {
     @Param('id', ParseIntPipe) id: number,
     @GetUser() user: User,
   ): Promise<Item> {
-    return this.itemsService.getItemById(id, user);
+    return this.itemsService.getItemById(id);
   }
 
   @Post()

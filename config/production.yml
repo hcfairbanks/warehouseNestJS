@@ -2,6 +2,8 @@ server:
   origin:
     production:
       - 'http://localhost:3001'
+      - 'http://localhost:3001/signin'
+      - 'http://localhost:3001/items'
 
 db:
   synchronize: false

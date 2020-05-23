@@ -3,6 +3,9 @@ db:
   username: 'deploy'
   password: 'password'
   synchronize: true
+  type: 'postgres'
+  port: 5432
+  database: 'warehouse'
 
 server:
   origin:

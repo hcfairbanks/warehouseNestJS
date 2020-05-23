@@ -1,3 +1,22 @@
+https://blog.theodo.com/2019/05/an-overview-of-nestjs-typeorm-release-your-first-application-in-less-than-30-minutes/
+https://stackoverflow.com/questions/59435293/typeorm-entity-in-nestjs-cannot-use-import-statement-outside-a-module
+// https://www.codemag.com/Article/1909081/Nest.js-Step-by-Step-Part-2
+
+
+********************************************************************************
+.env file
+https://www.youtube.com/watch?v=XTJ5mP9XykY
+https://codersera.com/blog/how-to-integrate-dotenv-with-nestjs-and-typeorm/
+********************************************************************************
+
+// this is broken
+"typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js --config ./src/config/typeorm.config.ts "  
+
+this worked
+yarn run typeorm migration:create -n createUserTable
+
+export NODE_ENV=test; yarn typeorm migration:run
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>

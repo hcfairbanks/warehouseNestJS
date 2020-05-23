@@ -1,0 +1,12 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "deploy",
+  "password": "password",
+  "database": "warehouse_test",
+  "synchronize": false,
+  "migrations": [
+    "migrations/*.ts"
+ ]
+}

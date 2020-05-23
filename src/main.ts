@@ -8,10 +8,12 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const serverConfig = config.get('server');
 
-  if (process.env.NODE_ENV === 'development') {
+  if (process.env.NODE_ENV === 'development' ) {
     app.enableCors({origin: serverConfig.origin.development, credentials: true});
   } else if (process.env.NODE_ENV === 'production') {
     app.enableCors({origin: serverConfig.origin.production, credentials: true});
+  } else if (process.env.NODE_ENV === 'test') {
+    app.enableCors({origin: serverConfig.origin.test, credentials: true});
   }
 
   const port = process.env.PORT || serverConfig.port;

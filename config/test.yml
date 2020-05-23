@@ -1,0 +1,15 @@
+db:
+  host: 'localhost'
+  username: 'deploy'
+  password: 'password'
+  synchronize: true
+  type: 'postgres'
+  port: 5432
+  database: 'warehouse_test'
+
+server:
+  origin:
+    development:
+      - 'http://localhost:3001'
+      - 'http://localhost:3001/signin'
+      - 'http://localhost:3001/items'

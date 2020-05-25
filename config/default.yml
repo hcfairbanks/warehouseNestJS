@@ -1,10 +1,10 @@
 server:
   port: 3000
 
-# db:
-#   type: 'postgres'
-#   port: 5432
-#   database: 'warehouse'
+db:
+  type: 'postgres'
+  port: 5432
+
 
 jwt:
   expiresIn: 9000

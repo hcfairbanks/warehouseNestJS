@@ -65,12 +65,12 @@ export class ItemsService {
       'purchaseDetails',
       'purchaseLocation',
       'categoryId',
+      'userId',
     ];
     // TODO Add role to db and check actions against role
     // Logger.verbose(`--User-- ${JSON.stringify(user)}---`);
 
     const item = await this.getItemById(id);
-    Logger.verbose(JSON.stringify(itemUpdate));
 
     const keys = Object.keys(itemUpdate);
     keys.forEach( key => {

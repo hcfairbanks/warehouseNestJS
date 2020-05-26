@@ -110,6 +110,7 @@ export class ItemRepository extends Repository<Item> {
             price,
             weight,
             categoryId,
+            userId,
             purchaseDate,
             purchaseDetails,
             purchaseLocation } = createItemDto;
@@ -126,7 +127,7 @@ export class ItemRepository extends Repository<Item> {
     item.purchaseDate = date;
     item.purchaseDetails = purchaseDetails;
     item.purchaseLocation = purchaseLocation;
-    item.user = user;
+    item.userId = userId;
 
     try {
       await item.save();

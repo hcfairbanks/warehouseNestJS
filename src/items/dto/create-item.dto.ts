@@ -21,5 +21,8 @@ export class CreateItemDto {
   categoryId: number;
 
   @IsNotEmpty()
+  userId: number;
+
+  @IsNotEmpty()
   description: string;
 }

@@ -4,7 +4,6 @@ db:
   password: 'password'
   synchronize: true
   type: 'postgres'
-  port: 5432
   database: 'warehouse_test'
 
 server:
@@ -13,3 +12,16 @@ server:
       - 'http://localhost:3001'
       - 'http://localhost:3001/signin'
       - 'http://localhost:3001/items'
+
+
+jwt:
+  secret: '9e056eff31bf906980b7afb3edfbc944
+           48cb7804a9c818e9dbec46543461b279
+           aac12b2da5b718e0d7ea38df368ffeda
+           829e3bdeb55d370210e1fd24e36e1fb4
+           fa5a66f7834c8db5cbd1539262b1097a
+           496c3b90595d136cdcb2565c9f0fbee8
+           0db6bf6862ea0bf65a2ae220738b7098
+           d00f556e414e04b103954479064cf782
+           12a879e6ffc3c046517c6253299e5de6
+           cea352dfac5c105885e3da50dddd1ed3'

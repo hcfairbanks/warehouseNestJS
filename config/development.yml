@@ -3,7 +3,6 @@ db:
   username: 'deploy'
   password: 'password'
   synchronize: true
-  dropSchema: false
   type: 'postgres'
   database: 'warehouse_development'
 
